@@ -6,11 +6,9 @@
     var url = purl();
     var oldUrl = url.attr('pathname');
     var newUrl = "www.baidu.com";
-    switch (oldUrl) {
-        case "/todo": {
-            newUrl = "https://bytedance.feishu.cn/docs/doccnoNT8UQZWYgVCDbdnSappHe";
-            break;
-        }
+    if (oldUrl === "/todo") {
+        newUrl = "https://bytedance.feishu.cn/docs/doccnoNT8UQZWYgVCDbdnSappHe";
     }
+    console(newUrl);
     window.location.href = newUrl;
 </script>
