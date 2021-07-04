@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
+
+<script>
+    var url = purl();
+    var oldUrl = url.attr('pathname');
+    var newUrl = "www.baidu.com";
+    switch (oldUrl) {
+        case "/todo": {
+            newUrl = "https://bytedance.feishu.cn/docs/doccnoNT8UQZWYgVCDbdnSappHe";
+            break;
+        }
+    }
+    window.location.replace(newUrl);
+</script>
